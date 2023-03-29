@@ -11,7 +11,7 @@ const MainText = styled.Text`
 export default function CustomText() {
   return (
     <>
-      <MainText>Expo Test App</MainText>
+      <MainText>Hello, World</MainText>
     </>
   );
 }

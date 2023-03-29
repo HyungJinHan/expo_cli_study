@@ -1,10 +1,12 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Config from "react-native-config";
 import MainPage from "./pages/MainPage";
 import TestPage1 from "./pages/TestPage1";
 import TestPage2 from "./pages/TestPage2";
+import StorybookUIRoot from "./storybook";
 
-export default function App() {
+const App = () => {
   const Stack = createNativeStackNavigator();
 
   return (
@@ -16,4 +18,6 @@ export default function App() {
       </Stack.Navigator>
     </NavigationContainer>
   );
-}
+};
+
+export default Config.LOAD_STORYBOOK === "true" ? StorybookUIRoot : App;
