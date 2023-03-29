@@ -1,26 +1,18 @@
-import { StatusBar } from "expo-status-bar";
-import { Button, Text } from "react-native";
-import styled from "styled-components/native";
-import { BasicButton, CustomButton } from "../components/Button";
-import CustomInput from "../components/Input";
-import CustomText from "../components/Text";
-
-const MainView = styled.View`
-  flex: 1;
-  align-items: center;
-  justify-content: center;
-`;
+import { StyleSheet, Text, View } from "react-native";
+import React from "react";
+import { CustomButton } from "../components/Button";
 
 export default function MainPage({ navigation }) {
   return (
-    <MainView>
-      <StatusBar style="auto" />
-      <CustomText />
-
-      <CustomInput />
-
-      <CustomButton title="Test1" navigation={navigation} />
-      <BasicButton title="Test2" navigation={navigation} />
-    </MainView>
+    <View style={styles.mainView}>
+      <Text>MainPage</Text>
+      <CustomButton title="Self" navigation={navigation} />
+    </View>
   );
 }
+
+const styles = StyleSheet.create({
+  mainView: {
+    height: "100%",
+  },
+});

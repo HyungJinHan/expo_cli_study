@@ -1,6 +1,5 @@
 // if you use expo remove this line
 import { AppRegistry } from "react-native";
-import { loadStories } from "./storyLoder";
 
 import {
   getStorybookUI,
@@ -17,7 +16,7 @@ addDecorator(withKnobs);
 // import stories
 // 자동으로 스토리 추가해주는 라이브러리 사용
 configure(() => {
-  loadStories();
+  require("./stories");
 }, module);
 
 // Refer to https://github.com/storybookjs/react-native/tree/master/app/react-native#getstorybookui-options

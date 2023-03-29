@@ -8,8 +8,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "storybook": "start-storybook -p 7007",
-    "build-storybook": "build-storybook",
-    "prestorybook": "rnstl"
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "@react-native-community/masked-view": "^0.1.11",
@@ -24,7 +23,6 @@
     "react-native-reanimated": "~2.14.4",
     "react-native-safe-area-context": "4.5.0",
     "react-native-screens": "~3.20.0",
-    "react-native-storybook-loader": "^2.0.5",
     "styled-components": "^5.3.9"
   },
   "private": true,
