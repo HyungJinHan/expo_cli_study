@@ -1,12 +1,18 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
+import { BackButton } from "../components/Button";
 
-export default function TestPage2() {
+export default function TestPage2({ navigation }) {
   return (
-    <View>
+    <View style={styles.mainView}>
+      <BackButton title={"<"} navigation={navigation} />
       <Text>TestPage2</Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  mainView: {
+    height: "100%",
+  },
+});

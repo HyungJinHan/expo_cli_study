@@ -6,14 +6,17 @@ import TestPage1 from "./pages/TestPage1";
 import TestPage2 from "./pages/TestPage2";
 import SelfPage from "./pages/SelfPage";
 import { StatusBar } from "react-native";
+// import { createDrawerNavigator } from "@react-navigation/drawer";
+// import "react-native-gesture-handler";
 
 const App = () => {
   const Stack = createNativeStackNavigator();
+  // const Drawer = createDrawerNavigator();
 
   return (
     <>
-      <StatusBar hidden={false} />
-      <Header />
+      {/* <StatusBar hidden={false} /> */}
+      {/* <Header /> */}
 
       <NavigationContainer>
         <Stack.Navigator initialRouteName="Home">
