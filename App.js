@@ -40,4 +40,4 @@ const App = () => {
   );
 };
 
-export default Config.LOAD_STORYBOOK === "true" ? StorybookUIRoot : App;
+export default App;
